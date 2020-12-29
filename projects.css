@@ -1,0 +1,36 @@
+.testA:hover ~ .testB {
+  background-color: blueviolet;
+}
+
+.bgTest1:hover ~ .bgTest2 {
+  background-color: blueviolet;
+}
+
+#projectBG1 {
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: .5s;
+  box-shadow: 5px 5px;
+}
+#projectBG2 {
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 1s;
+}
+#projectBG3 {
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 1.5s;
+}
