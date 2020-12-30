@@ -2,7 +2,7 @@ let w = window.innerWidth;
 let h = window.innerHeight;
 let sketch = function (p) {
   p.setup = function () {
-    canvas = p.createCanvas(w, h);
+    canvas = p.createCanvas(420, 830);
     p.text('click*', 150, 150)
   }
 
