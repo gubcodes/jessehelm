@@ -11,7 +11,7 @@ let sketch = function (p) {
   //array of technologies:
   let list = ['JAVASCRIPT', 'TYPESCRIPT', 'P5.JS', 'REACT.JS', 'CSS', 'TAILWIND', 'BOOTSTRAP', 'SQL', 'POSTGRES', 'HTML', 'PHOTOSHOP', 'ILLUSTRATOR', 'FIGMA', 'GITHUB', 'HEROKU', 'FIREBASE']
 
-  p.mousePressed = function () {
+  p.mouseClicked = function () {
     if (times === 15) {
       times = -1;
     } else {
@@ -20,7 +20,7 @@ let sketch = function (p) {
     console.log(p.mouseX, p.mouseY);
     p.text(list[times], p.mouseX, p.mouseY);
     // prevent default
-    return false;
+    // return false;
   }
   // window.onresize = function() {
   //   //assigns new values for width and height variables
