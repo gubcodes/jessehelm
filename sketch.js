@@ -3,7 +3,7 @@ let h = window.innerHeight;
 let sketch = function (p) {
   p.setup = function () {
     canvas = p.createCanvas(w, h);
-    p.text('click*', 150, 150)
+    p.text('click**', 150, 150)
   }
 
   //tracking number of clicks:
@@ -11,7 +11,7 @@ let sketch = function (p) {
   //array of technologies:
   let list = ['JAVASCRIPT', 'TYPESCRIPT', 'P5.JS', 'REACT.JS', 'CSS', 'TAILWIND', 'BOOTSTRAP', 'SQL', 'POSTGRES', 'HTML', 'PHOTOSHOP', 'ILLUSTRATOR', 'FIGMA', 'GITHUB', 'HEROKU', 'FIREBASE']
 
-  p.touchStarted = function () {
+  p.mouseClicked = function () {
     if (times === 15) {
       times = -1;
     } else {
