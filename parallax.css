@@ -139,9 +139,9 @@ body {
   /* top: 24%; */
 }
 #group4 #p5 {
-  -webkit-transform: translateZ(100px) scale(.6);
-  transform: translateZ(100px) scale(.6);
-  z-index: 10;
+  -webkit-transform: translateZ(100px) scale(.5);
+  transform: translateZ(100px) scale(.5);
+  z-index: 4;
 }
 #group5 #fore {
   -webkit-transform: translateZ(90px) scale(.7);
