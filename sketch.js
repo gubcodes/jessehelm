@@ -3,7 +3,11 @@ let h = window.innerHeight;
 let sketch = function (p) {
   p.setup = function () {
     canvas = p.createCanvas(w, h);
-    p.text('click**', 150, 150)
+    p.textFont('Spartan');
+    p.textSize(18)
+    //change text color when ready:
+    // p.fill(235, 64, 52)
+    p.text('//HINT: TAP', w / 1.75, h / 4);
   }
 
   //tracking number of clicks:
