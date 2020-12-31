@@ -23,7 +23,7 @@ function chbg(image1, image2, image3) {
 }
 //I LIKE TO section---------
 // pick a your text:
-let sentence = 'I ALSO LIKE TO CODE THINGS LIKE THIS. ARTSY STUFF AND BLAH BLAH BLAH...';
+let sentence = 'SOLVE PROBLEMS WITH COMPASSION + INTEGRITY.';
 // split it up into an array of letters:
 let letters = sentence.split('');
 // set up the timer:
@@ -35,7 +35,20 @@ async function load () {
   // loop over the length of the array of letters, creating span elements inside the 'testSpan' class, also using the ternary to break the lines where we want:
   for(i = 0; i < letters.length; i++) {
       let span = document.createElement("SPAN");
-    span.innerHTML = (i == 20 ? `<br>${letters[i]}` : letters[i]);
+      if (i == 5) {
+        span.innerHTML = `<br>${letters[i]}`;
+      } else if (i == 14) {
+        span.innerHTML = `<br>${letters[i]}`;
+      } else if (i == 19) {
+        span.innerHTML = `<br>${letters[i]}`;
+      } else if (i == 32) {
+        span.innerHTML = `<br>${letters[i]}`;
+      } else if (i == 42) {
+        span.innerHTML = `<br>${letters[i]}`;
+      } else {
+        span.innerHTML = letters[i];
+      }
+    // span.innerHTML = (i == 20 ? `<br>${letters[i]}` : letters[i]);
     document.getElementById('animateDiv').appendChild(span).className = 'animateSpan';
     // set timer length for loop cycle:
   await timer(30);
@@ -43,7 +56,6 @@ async function load () {
 console.log(loaded);
 }
 // call the whole function when scrolled to:
-// load();
 const config = {
   root: null,
 }
