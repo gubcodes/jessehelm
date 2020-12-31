@@ -23,7 +23,7 @@ function chbg(image1, image2, image3) {
 }
 //I LIKE TO section---------
 // pick a your text:
-let sentence = 'SOLVE PROBLEMS WITH COMPASSION + INTEGRITY.';
+let sentence = 'SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';
 // split it up into an array of letters:
 let letters = sentence.split('');
 // set up the timer:
@@ -41,9 +41,9 @@ async function load () {
         span.innerHTML = `<br>${letters[i]}`;
       } else if (i == 19) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 32) {
+      } else if (i == 31) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 42) {
+      } else if (i == 41) {
         span.innerHTML = `<br>${letters[i]}`;
       } else {
         span.innerHTML = letters[i];
