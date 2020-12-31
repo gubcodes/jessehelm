@@ -1,0 +1,15 @@
+.animateSpan {
+  animation: paddingEase 3s, fadeIn 3s;
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/* @keyframes startBig {
+  from {font-size: 25px;}
+  to {font-size: 15px;}
+} */
+@keyframes paddingEase {
+  from {padding-right: 10px;}
+  to {padding-right: 0;}
+}
