@@ -43,7 +43,7 @@ async function load () {
         span.innerHTML = `<br>${letters[i]}`;
       } else if (i == 31) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 41) {
+      } else if (i == 42) {
         span.innerHTML = `<br>${letters[i]}`;
       } else {
         span.innerHTML = letters[i];
