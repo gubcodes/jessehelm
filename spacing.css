@@ -59,10 +59,10 @@
 .face {
   width: 200px;
   height: 200px;
-  background: #ffa083;
+  background: #ffbaa5;
 /*   border: 1px solid black; */
   position: absolute;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   display: flex;
   align-items: center;
   justify-content: center;
