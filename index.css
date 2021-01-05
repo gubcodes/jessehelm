@@ -11317,7 +11317,7 @@ video {
 }
 
 .font-second {
-  font-family: Open Sans, sans-serif;
+  font-family: Shrikhand, cursive;
 }
 
 .font-third {
@@ -42127,7 +42127,7 @@ video {
   }
 
   .sm\:font-second {
-    font-family: Open Sans, sans-serif;
+    font-family: Shrikhand, cursive;
   }
 
   .sm\:font-third {
@@ -72859,7 +72859,7 @@ video {
   }
 
   .md\:font-second {
-    font-family: Open Sans, sans-serif;
+    font-family: Shrikhand, cursive;
   }
 
   .md\:font-third {
@@ -103591,7 +103591,7 @@ video {
   }
 
   .lg\:font-second {
-    font-family: Open Sans, sans-serif;
+    font-family: Shrikhand, cursive;
   }
 
   .lg\:font-third {
@@ -134323,7 +134323,7 @@ video {
   }
 
   .xl\:font-second {
-    font-family: Open Sans, sans-serif;
+    font-family: Shrikhand, cursive;
   }
 
   .xl\:font-third {
@@ -165055,7 +165055,7 @@ video {
   }
 
   .\32xl\:font-second {
-    font-family: Open Sans, sans-serif;
+    font-family: Shrikhand, cursive;
   }
 
   .\32xl\:font-third {
@@ -185014,4 +185014,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-  

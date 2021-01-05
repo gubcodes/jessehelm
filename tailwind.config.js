@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         first: ['Spartan', 'sans-serif'],
-        second: ['Open Sans', 'sans-serif'],
+        second: ['Shrikhand', 'cursive'],
         third: ['Josefin Sans', 'sans-serif'],
       },
       colors: {

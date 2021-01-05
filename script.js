@@ -22,8 +22,8 @@ function chbg(image1, image2, image3) {
   div3.style.opacity = '3';
 }
 //I LIKE TO section---------
-// pick a your text:
-let sentence = 'SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';
+// pick your text:
+let sentence = '...SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';
 // split it up into an array of letters:
 let letters = sentence.split('');
 // set up the timer:
@@ -35,15 +35,15 @@ async function load () {
   // loop over the length of the array of letters, creating span elements inside the 'testSpan' class, also using the ternary to break the lines where we want:
   for(i = 0; i < letters.length; i++) {
       let span = document.createElement("SPAN");
-      if (i == 5) {
+      if (i == 8) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 14) {
+      } else if (i == 17) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 19) {
+      } else if (i == 22) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 31) {
+      } else if (i == 34) {
         span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 42) {
+      } else if (i == 45) {
         span.innerHTML = `<br>${letters[i]}`;
       } else {
         span.innerHTML = letters[i];

@@ -204,18 +204,26 @@ body {
 #nav1 {
   color: #f99974;
   animation: colors1 40s linear infinite;
+  transform: rotate(-20deg);
+  text-shadow: 2px 2px black;
 }
 #nav2 {
   color: #bde8ea;
   animation: colors2 40s linear infinite;
+  transform: rotate(-20deg);
+  text-shadow: 2px 2px black;
 }
 #nav3 {
   color: #fbe457;
   animation: colors3 40s linear infinite;
+  transform: rotate(-20deg);
+  text-shadow: 2px 2px black;
 }
 #nav4 {
   color: #aba7e1;
   animation: colors4 40s linear infinite;
+  transform: rotate(-20deg);
+  text-shadow: 2px 2px black;
 }
 @keyframes colors1 {
   0% {color: #f99974}
@@ -257,3 +265,19 @@ body {
   75% {color: #fbe457}
   95% {color: #fbe457}
 }
+/* landing name */
+.landingName {
+  color: #f99974;
+  animation: colors1 40s linear infinite;
+  transform: rotate(-20deg);
+}
+/* @keyframes colors1 {
+  0% {color: #f99974}
+  20% {color: #f99974}
+  25% {color: #bde8ea}
+  45% {color: #bde8ea}
+  50% {color: #fbe457}
+  70% {color: #fbe457}
+  75% {color: #aba7e1}
+  95% {color: #aba7e1}
+} */

@@ -3,7 +3,7 @@ let h = window.innerHeight;
 let sketch = function (p) {
   p.setup = function () {
     canvas = p.createCanvas(w, h);
-    p.textFont('Spartan');
+    p.textFont('VT323');
     p.textSize(18)
     //change text color when ready:
     // p.fill(235, 64, 52)
