@@ -109,6 +109,7 @@ body {
   transform: translateZ(-300px) scale(2);
   z-index: 3;
   background-image: url(./assets/Jesse-Whitney-Retter-Photography-31.jpg);
+  filter:contrast(120%) brightness(200%);
   background-size: cover;
   background-position: center;
   /* top: -24%; */
@@ -178,4 +179,81 @@ body {
   transform: translateZ(0);
   z-index: 4;
   background-color: white;
+}
+/* navigation */
+.parallaxLayerNav {
+  /* display: flex; test */
+  /* position: -webkit-sticky;
+  position: sticky; */
+  position: fixed;
+  height: 0;
+  top: 80%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#baseNav {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  /* height: 20%; */
+  /* top: 250%; */
+}
+#nav1 {
+  color: #f99974;
+  animation: colors1 40s linear infinite;
+}
+#nav2 {
+  color: #bde8ea;
+  animation: colors2 40s linear infinite;
+}
+#nav3 {
+  color: #fbe457;
+  animation: colors3 40s linear infinite;
+}
+#nav4 {
+  color: #aba7e1;
+  animation: colors4 40s linear infinite;
+}
+@keyframes colors1 {
+  0% {color: #f99974}
+  20% {color: #f99974}
+  25% {color: #bde8ea}
+  45% {color: #bde8ea}
+  50% {color: #fbe457}
+  70% {color: #fbe457}
+  75% {color: #aba7e1}
+  95% {color: #aba7e1}
+}
+@keyframes colors2 {
+  0% {color: #bde8ea}
+  20% {color: #bde8ea}
+  25% {color: #fbe457}
+  45% {color: #fbe457}
+  50% {color: #aba7e1}
+  70% {color: #aba7e1}
+  75% {color: #f99974}
+  95% {color: #f99974}
+}
+@keyframes colors3 {
+  0% {color: #fbe457}
+  20% {color: #fbe457}
+  25% {color: #aba7e1}
+  45% {color: #aba7e1}
+  50% {color: #f99974}
+  70% {color: #f99974}
+  75% {color: #bde8ea}
+  95% {color: #bde8ea}
+}
+@keyframes colors4 {
+  0% {color: #aba7e1}
+  20% {color: #aba7e1}
+  25% {color: #f99974}
+  45% {color: #f99974}
+  50% {color: #bde8ea}
+  70% {color: #bde8ea}
+  75% {color: #fbe457}
+  95% {color: #fbe457}
 }
