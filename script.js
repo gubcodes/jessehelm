@@ -8,19 +8,68 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 //I MADE THESE section----------
-function chbg(image1, image2, image3) {
+async function chbg1(image1, image2, image3, text, tech, listNumber) {
   let div1 = document.getElementById('projectBG1');
   let div2 = document.getElementById('projectBG2');
   let div3 = document.getElementById('projectBG3');
+  let div4 = document.getElementById('projectText');
+  let div5 = document.getElementById('projectTech');
+  let div6 = document.getElementById('projectList').children;
+  let div6Number1 = div6.item(0);
+  let div6Number2 = div6.item(1);
+  let div6Number3 = div6.item(2);
+  let div6Number4 = div6.item(3);
+  let div6Number5 = div6.item(4);
+  let div6Number6 = div6.item(5);
 
-  div1.style.backgroundImage = `url(${image1})`;
-  div2.style.backgroundImage = `url(${image2})`;
-  div3.style.backgroundImage = `url(${image3})`;
+  div1.src = '';
+  div2.src = '';
+  div3.src = '';
+  div4.innerText = '';
+  div5.innerText = '';
+  div6Number1.classList.remove('projectSelect');
+  div6Number2.classList.remove('projectSelect');
+  div6Number3.classList.remove('projectSelect');
+  div6Number4.classList.remove('projectSelect');
+  div6Number5.classList.remove('projectSelect');
+  div6Number6.classList.remove('projectSelect');
+
+  div1.style.opacity = '0';
+  div2.style.opacity = '0';
+  div3.style.opacity = '0';
+  div4.style.opacity = '0';
+  div5.style.opacity = '0';
+}
+function chbg2(image1, image2, image3, text, tech, listNumber) {
+  let div1 = document.getElementById('projectBG1');
+  let div2 = document.getElementById('projectBG2');
+  let div3 = document.getElementById('projectBG3');
+  let div4 = document.getElementById('projectText');
+  let div5 = document.getElementById('projectTech');
+  let div6 = document.getElementById('projectList').children;
+  let div6Number = div6.item(listNumber);
+  let div7 = document.getElementById('projectLink');
+
+  div1.src = image1;
+  div2.src = image2;
+  div3.src = image3;
+  div4.innerText = text;
+  div5.innerText = tech;
+  div6Number.classList.add('projectSelect');
+  // TODO: add link parameters
 
   div1.style.opacity = '1';
-  div2.style.opacity = '2';
-  div3.style.opacity = '3';
+  div2.style.opacity = '1';
+  div3.style.opacity = '1';
+  div4.style.opacity = '1';
+  div5.style.opacity = '1';
+  div7.style.opacity = '1';
 }
+
+function chbg(image1, image2, image3, text, tech, listNumber) {
+  chbg1(image1, image2, image3, text, tech, listNumber).then(chbg2(image1, image2, image3, text, tech, listNumber));
+}
+
 //I LIKE TO section---------
 // pick your text:
 let sentence = '...SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';

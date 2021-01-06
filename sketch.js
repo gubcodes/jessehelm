@@ -3,10 +3,14 @@ let h = window.innerHeight;
 let sketch = function (p) {
   p.setup = function () {
     canvas = p.createCanvas(w, h);
-    p.textFont('VT323');
-    p.textSize(18)
-    //change text color when ready:
-    // p.fill(235, 64, 52)
+    p.textFont('tuffybold');
+    if (w >= 600) {
+      p.textSize(32)
+    } else {
+      p.textSize(18)
+    }
+    // p.fill(84, 84, 84)
+    p.fill(255,255,255)
     p.text('//HINT: TAP', w / 1.75, h / 4);
   }
 

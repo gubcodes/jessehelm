@@ -1,36 +1,72 @@
-.testA:hover ~ .testB {
+/* .testA:hover ~ .testB {
   background-color: blueviolet;
 }
 
 .bgTest1:hover ~ .bgTest2 {
   background-color: blueviolet;
-}
+} */
 
 #projectBG1 {
-  background-position: right top;
+  /* background-position: right top;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 50% auto; */
   opacity: 0;
   transition: opacity .5s linear;
   transition-delay: .5s;
   box-shadow: 5px 5px;
+  outline: 1px solid #545454;
 }
 #projectBG2 {
-  background-position: right top;
+  /* background-position: right top;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% auto; */
   opacity: 0;
   transition: opacity .5s linear;
   transition-delay: 1s;
+  box-shadow: 5px 5px;
+  outline: 1px solid #545454;
 }
 #projectBG3 {
-  background-position: right top;
+  /* background-position: right top;
   background-size: contain;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% auto; */
   opacity: 0;
   transition: opacity .5s linear;
   transition-delay: 1.5s;
+  box-shadow: 5px 5px;
+  outline: 1px solid #545454;
+}
+#projectText {
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 2s;
+}
+#projectTech {
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 2.5s;
+}
+#projectLink {
+  opacity: 0;
+  transition: opacity .5s linear;
+  transition-delay: 3s;
+}
+.projectSelect {
+  background-color: #f99974;
+  animation: bgColors1 40s linear infinite;
+  /* transition: opacity .5s linear;
+  transition-delay: 0s; */
+}
+@keyframes bgColors1 {
+  0% {background-color: #f99974}
+  20% {background-color: #f99974}
+  25% {background-color: #bde8ea}
+  45% {background-color: #bde8ea}
+  50% {background-color: #fbe457}
+  70% {background-color: #fbe457}
+  75% {background-color: #aba7e1}
+  95% {background-color: #aba7e1}
 }

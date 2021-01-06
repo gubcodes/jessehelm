@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        first: ['Spartan', 'sans-serif'],
-        second: ['Shrikhand', 'cursive'],
-        third: ['Josefin Sans', 'sans-serif'],
+        firstBold: ['tuffybold', 'sans-serif'],
+        firstRegular: ['tuffyregular', 'sans-serif'],
+        firstBoldItalic: ['tuffybold-italic', 'sans-serif'],
+        firstItalic: ['tuffyitalic', 'sans-serif'],
+        second: ['shrikhandregular', 'cursive'],
+        third: ['vt323regular', 'sans-serif'],
       },
       colors: {
-        shwellow: '#f48c06'
+        myBlack: '#545454'
       }
     },
   },
