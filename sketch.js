@@ -6,12 +6,16 @@ let sketch = function (p) {
     p.textFont('tuffybold');
     if (w >= 600) {
       p.textSize(32)
+      p.fill(255,255,255)
+      p.text('//HINT: CLICK', w / 1.75, h / 4);
     } else {
       p.textSize(18)
+      p.fill(255,255,255)
+      p.text('//HINT: TAP', w / 1.75, h / 4);
     }
     // p.fill(84, 84, 84)
     p.fill(255,255,255)
-    p.text('//HINT: TAP', w / 1.75, h / 4);
+    // p.text('//HINT: TAP', w / 1.75, h / 4);
   }
 
   //tracking number of clicks:

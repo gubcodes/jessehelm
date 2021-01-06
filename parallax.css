@@ -265,22 +265,6 @@ body {
   75% {color: #fbe457}
   95% {color: #fbe457}
 }
-/* landing name */
-/* .landingName {
-  color: #f99974;
-  animation: colorsName 10s linear infinite;
-  transform: rotate(-20deg);
-}
-@keyframes colorsName {
-  0% {color: #f99974}
-  20% {color: #f99974}
-  25% {color: #bde8ea}
-  45% {color: #bde8ea}
-  50% {color: #fbe457}
-  70% {color: #fbe457}
-  75% {color: #aba7e1}
-  95% {color: #aba7e1}
-} */
 /* i work with */
 *.unselectable {
   -moz-user-select: -moz-none;
@@ -288,4 +272,69 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+/* find me on */
+#findIcon1 {
+  fill: #aba7e1;
+  animation: fill1 10s linear infinite;
+  -webkit-filter: drop-shadow( 2px 2px #545454);
+  filter: drop-shadow( 2px 2px #545454);
+}
+@keyframes fill1 {
+  0% {fill: #aba7e1}
+  20% {fill: #aba7e1}
+  25% {fill: #f99974}
+  45% {fill: #f99974}
+  50% {fill: #bde8ea}
+  70% {fill: #bde8ea}
+  75% {fill: #fbe457}
+  95% {fill: #fbe457}
+}
+#findIcon2 {
+  fill: #fbe457;
+  animation: fill2 10s linear infinite;
+  -webkit-filter: drop-shadow( 2px 2px #545454);
+  filter: drop-shadow( 2px 2px #545454);
+}
+@keyframes fill2 {
+  0% {fill: #fbe457}
+  20% {fill: #fbe457}
+  25% {fill: #aba7e1}
+  45% {fill: #aba7e1}
+  50% {fill: #f99974}
+  70% {fill: #f99974}
+  75% {fill: #bde8ea}
+  95% {fill: #bde8ea}
+}
+#findIcon3 {
+  fill: #bde8ea;
+  animation: fill3 10s linear infinite;
+  -webkit-filter: drop-shadow( 2px 2px #545454);
+  filter: drop-shadow( 2px 2px #545454);
+}
+@keyframes fill3 {
+  0% {fill: #bde8ea}
+  20% {fill: #bde8ea}
+  25% {fill: #fbe457}
+  45% {fill: #fbe457}
+  50% {fill: #aba7e1}
+  70% {fill: #aba7e1}
+  75% {fill: #f99974}
+  95% {fill: #f99974}
+}
+#findIcon4 {
+  fill: #bde8ea;
+  animation: fill4 10s linear infinite;
+  -webkit-filter: drop-shadow( 2px 2px #545454);
+  filter: drop-shadow( 2px 2px #545454);
+}
+@keyframes fill4 {
+  0% {fill: #f99974}
+  20% {fill: #f99974}
+  25% {fill: #bde8ea}
+  45% {fill: #bde8ea}
+  50% {fill: #fbe457}
+  70% {fill: #fbe457}
+  75% {fill: #aba7e1}
+  95% {fill: #aba7e1}
 }

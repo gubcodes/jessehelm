@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">  
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
   <link rel="manifest" href="./assets/icons/site.webmanifest">
   <link rel="stylesheet" href="./assets/fonts/fonts.css">
   <link rel="stylesheet" href="parallax.css">
@@ -41,7 +41,7 @@
             <div class='font-firstBold text-myBlack text-xl text-right lg:text-4xl'>
               JUNIOR
             </div>
-          <div class='font-firstBold text-myBlack text-xl text-left lg:text-4xl'>
+            <div class='font-firstBold text-myBlack text-xl text-left lg:text-4xl'>
               <!-- <br> -->
               DESIGNER+<br>DEVELOPER
             </div>
@@ -109,23 +109,37 @@
         <div class='vh5 grid grid-rows-1'>
           <div class='grid grid-cols-2 gap-2'>
             <div class='grid grid-rows-1 gap-2'>
-            <div class='font-firstBold text-myBlack text-5xl text-right'>
-              I<br>MADE<br>THESE
+              <div class='font-firstBold text-myBlack text-5xl text-right xl:text-7xl'>
+                I<br>MADE<br>THESE
+              </div>
+              <div class='grid grid-rows-3 gap-2 lg:pl-52'>
+                <div class='font-firstBold text-myBlack text-sm text-right pt-12 lg:pl-48 lg:text-xl' id='projectText'>
+                </div>
+                <div class='font-firstItalic text-myBlack text-xs text-right lg:pl-48 lg:text-lg' id='projectTech'>
+                </div>
+                <div class='font-firstBold text-myBlack text-xs text-right lg:pl-48 lg:text-xl' id='projectLink'></div>
+              </div>
             </div>
-            <div class='grid grid-rows-3 gap-2 lg:pl-52'>
-            <div class='font-firstRegular text-myBlack text-sm text-right pt-12 lg:pl-48 lg:text-xl' id='projectText'></div>
-            <div class='font-firstItalic text-myBlack text-xs text-right lg:pl-48 lg:text-lg' id='projectTech'></div>
-            <div class='font-firstRegular text-myBlack text-xs text-right lg:pl-48 lg:text-xl' id='projectLink'></div>
-            </div>
-          </div>
             <div class='font-firstRegular text-myBlack text-xl text-left'>
               <ul class='lg:pr-96 lg:mr-24' id='projectList'>
-                <li class='pointer' onClick="chbg('assets/porchswingScreen.png', 'assets/porchswingScreen2.png', 'assets/porchswingScreen3.png', `MY IDEA OF A LOCAL MAKER MARKETPLACE APP, FULLY FUNCTIONAL UP UNTIL PAYMENT PROCESSING`, `REACT JSX, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, FIREBASE`, '0', 'http://porchswing.herokuapp.com/' )">PORCHSWING</li>
-                <li class='pointer' onClick="chbg('assets/worthekikScreen.png', 'assets/worthekikScreen2.png', 'assets/worthekikScreen3.png', `BRANDING ONLY FOR NOW, WEBSITE SOON`, `ILLUSTRATOR, SVG, CSS`, '1', '' )">WORTHEKIK</li>
-                <li class='pointer' onClick="chbg('assets/nothingScreen.png', 'assets/nothingScreen2.png', 'assets/nothingScreen3.png', `PROCEDURALLY GENERATED GAME ENGINE, WORK-IN-PROGRESS, DEPLOYING FOR TESTING SOON`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU`, '2', '' )">REACT RPG</li>
-                <li class='pointer' onClick="chbg('assets/gubcoScreen.png', 'assets/gubcoScreen.png', 'assets/gubcoScreen.png', `AN IDEA SLOWLY COMING TO LIFE`, `IMAGINATION, PROCRASTINATION`, '3', 'https://www.instagram.com/gubcompanies/' )">GUBCo</li>
-                <li class='pointer' onClick="chbg('assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', `MY SECOND API PROJECT FOR EFA, UTILIZING NASA INSIGHT + METEOSTAT (CURRENTLY INOPERATIVE)`, `JAVASCRIPT, BOOTSTRAP, CSS, HTML, FIREBASE`, '4', 'https://apichallenge2jh.web.app/')">LAST WEEK ON MARS</li>
-                <li class='pointer' onClick="chbg('assets/recipeazyScreen.png', 'assets/recipeazyScreen2.png', 'assets/recipeazyScreen3.png', `EFA WEEK-LONG GROUP PROJECT, GREAT LEARNING EXPERIENCE`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, TEAM GIT`, '5', 'https://group-4-recipeazy-client.herokuapp.com/')">RECIPEAZY</li>
+                <li class='pointer'
+                  onClick="chbg('assets/porchswingScreen.png', 'assets/porchswingScreen2.png', 'assets/porchswingScreen3.png', `MY IDEA OF A LOCAL MAKER MARKETPLACE APP, FULLY FUNCTIONAL UP UNTIL PAYMENT PROCESSING`, `REACT JSX, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, FIREBASE`, '0', 'http://porchswing.herokuapp.com/' )">
+                  PORCHSWING</li>
+                <li class='pointer'
+                  onClick="chbg('assets/worthekikScreen.png', 'assets/worthekikScreen2.png', 'assets/worthekikScreen3.png', `BRANDING ONLY FOR NOW, WEBSITE SOON`, `ILLUSTRATOR, SVG, CSS`, '1', '' )">
+                  WORTHEKIK</li>
+                <li class='pointer'
+                  onClick="chbg('assets/nothingScreen.png', 'assets/nothingScreen2.png', 'assets/nothingScreen3.png', `PROCEDURALLY GENERATED GAME ENGINE, WORK-IN-PROGRESS, DEPLOYING FOR TESTING SOON`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU`, '2', '' )">
+                  REACT RPG</li>
+                <li class='pointer'
+                  onClick="chbg('assets/gubcoScreen.png', 'assets/gubcoScreen.png', 'assets/gubcoScreen.png', `AN IDEA SLOWLY COMING TO LIFE`, `IMAGINATION, PROCRASTINATION`, '3', 'https://www.instagram.com/gubcompanies/' )">
+                  GUBCo</li>
+                <li class='pointer'
+                  onClick="chbg('assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', `MY SECOND API PROJECT FOR EFA, UTILIZING NASA INSIGHT + METEOSTAT (CURRENTLY INOPERATIVE)`, `JAVASCRIPT, BOOTSTRAP, CSS, HTML, FIREBASE`, '4', 'https://apichallenge2jh.web.app/')">
+                  LAST WEEK ON MARS</li>
+                <li class='pointer'
+                  onClick="chbg('assets/recipeazyScreen.png', 'assets/recipeazyScreen2.png', 'assets/recipeazyScreen3.png', `EFA WEEK-LONG GROUP PROJECT, GREAT LEARNING EXPERIENCE`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, TEAM GIT`, '5', 'https://group-4-recipeazy-client.herokuapp.com/')">
+                  RECIPEAZY</li>
                 <li class='pr-2 pb-2 pt-1'><img id='projectBG1' src=''></li>
                 <li class='pr-2 pb-2'><img id='projectBG2' src=''></li>
                 <li class='pr-2 pb-2'><img id='projectBG3' src=''></li>
@@ -144,12 +158,61 @@
         <!-- links section -->
         <div class='vh5 grid grid-rows-1'>
           <div class='grid grid-cols-2 gap-2'>
-            <div class='font-firstBold text-myBlack text-5xl text-right'>
+            <div class='font-firstBold text-myBlack text-5xl text-right xl:text-7xl'>
               FIND<br>ME<br>ON
             </div>
             <div class='font-firstRegular text-myBlack text-xl text-left'>
-              SOLVE<br>PROBLEMS WITH COMPASSION <span>+</span>INTEGRITY.<br>
-              LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. QUID DUBITAS IGITUR MUTARE <br>
+              <div class='grid grid-rows-4 gap-6 lg:pr-96 lg:mr-20 lg:gap-2'>
+                <div>
+                  <!-- codepen -->
+                  <a href='https://codepen.io/gubcode' target='_blank'>
+                  <svg id='findIcon1' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="40%"
+                    preserveAspectRatio="xMinYMin" class="icon__icon">
+                    <path
+                      d="M10.402 5.131a.79.79 0 0 0-.887.01L5.54 7.91a.79.79 0 0 0-.339.648v2.982a.79.79 0 0 0 .355.659l4.039 2.67a.79.79 0 0 0 .87 0l4.12-2.722a.79.79 0 0 0 .354-.658v-2.93a.79.79 0 0 0-.354-.66l-4.184-2.768zm3.077 3.23l-1.523 1.023-1.428-1.038-.009-2.043 2.96 2.059zM9.486 6.306v1.999L8.023 9.327l-1.46-.979 2.923-2.043zM6.164 9.333l.944.633-.944.661V9.333zm3.347 4.261l-2.947-1.976 1.472-1.029 1.475.99v2.015zm-.56-3.644l.955-.667 1.11.73-.984.662-1.08-.725zm1.601 3.644v-2.016l1.41-.944 1.517.997-2.927 1.963zm3.347-2.933l-1-.657 1-.671v1.328z">
+                    </path>
+                    <path
+                      d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z">
+                    </path>
+                  </svg>
+                </a>
+                </div>
+                <div>
+                  <!-- github -->
+                  <a href='https://github.com/gubcodes/' target='_blank'>
+                  <svg id='findIcon2' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="40%"
+                    preserveAspectRatio="xMinYMin" class="icon__icon" fill='#ffffff'>
+                    <path
+                      d="M8.18 15.008c.12 0 .211-.004.271-.012a.317.317 0 0 0 .18-.107c.06-.063.09-.154.09-.274l-.004-.557c-.003-.355-.004-.637-.004-.844l-.188.033a2.41 2.41 0 0 1-.455.028 3.498 3.498 0 0 1-.57-.057 1.276 1.276 0 0 1-.548-.246 1.04 1.04 0 0 1-.36-.503l-.082-.189a2.046 2.046 0 0 0-.258-.417.989.989 0 0 0-.357-.312l-.057-.04a.602.602 0 0 1-.106-.1.455.455 0 0 1-.074-.114c-.016-.038-.003-.07.04-.094a.533.533 0 0 1 .238-.037l.164.025c.11.021.245.087.406.196.16.11.293.251.397.426.126.224.277.395.455.512a.964.964 0 0 0 .536.176c.18 0 .336-.013.467-.04a1.63 1.63 0 0 0 .369-.124c.049-.365.182-.647.4-.843a5.61 5.61 0 0 1-.839-.148 3.346 3.346 0 0 1-.77-.32 2.204 2.204 0 0 1-.66-.548c-.174-.219-.317-.505-.43-.86a4.09 4.09 0 0 1-.167-1.229c0-.66.216-1.223.647-1.687-.202-.497-.183-1.054.057-1.671.159-.05.394-.013.705.11.311.123.54.228.684.316.145.087.26.16.348.22a5.814 5.814 0 0 1 1.573-.212c.54 0 1.065.07 1.573.213l.31-.197c.214-.13.465-.251.754-.36.29-.11.511-.14.664-.09.246.617.268 1.174.065 1.67.432.465.648 1.027.648 1.688 0 .464-.056.875-.168 1.233-.112.358-.257.644-.434.86a2.29 2.29 0 0 1-.664.545 3.342 3.342 0 0 1-.77.32 5.605 5.605 0 0 1-.84.147c.284.245.426.633.426 1.163v1.957c0 .093.014.168.041.226a.226.226 0 0 0 .131.119c.06.021.114.035.16.04.047.006.113.009.2.009h-1.966-2.227z">
+                    </path>
+                    <path
+                      d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z">
+                    </path>
+                  </svg>
+                </a>
+                </div>
+                <div>
+                  <!-- instagram -->
+                  <a href='https://www.instagram.com/gubcompanies/' target='_blank'>
+                  <svg id='findIcon3' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="40%"
+                    preserveAspectRatio="xMinYMin" class="icon__icon" fill='#ffffff'>
+                    <path
+                      d="M14.017 0h-8.07A5.954 5.954 0 0 0 0 5.948v8.07a5.954 5.954 0 0 0 5.948 5.947h8.07a5.954 5.954 0 0 0 5.947-5.948v-8.07A5.954 5.954 0 0 0 14.017 0zm3.94 14.017a3.94 3.94 0 0 1-3.94 3.94h-8.07a3.94 3.94 0 0 1-3.939-3.94v-8.07a3.94 3.94 0 0 1 3.94-3.939h8.07a3.94 3.94 0 0 1 3.939 3.94v8.07z">
+                    </path>
+                    <path
+                      d="M9.982 4.819A5.17 5.17 0 0 0 4.82 9.982a5.17 5.17 0 0 0 5.163 5.164 5.17 5.17 0 0 0 5.164-5.164A5.17 5.17 0 0 0 9.982 4.82zm0 8.319a3.155 3.155 0 1 1 0-6.31 3.155 3.155 0 0 1 0 6.31z">
+                    </path>
+                    <circle cx="15.156" cy="4.858" r="1.237"></circle>
+                  </svg>
+                </a>
+                </div>
+                <div>
+                  <!-- linkedin -->
+                  <a href='www.linkedin.com/in/jesse-helm' target='_blank'>
+                  <svg id='findIcon4' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="40%" preserveAspectRatio="xMinYMin" class="icon__icon" fill='#ffffff'><path d="M15 11.13v3.697h-2.143v-3.45c0-.866-.31-1.457-1.086-1.457-.592 0-.945.398-1.1.784-.056.138-.071.33-.071.522v3.601H8.456s.029-5.842 0-6.447H10.6v.913l-.014.021h.014v-.02c.285-.44.793-1.066 1.932-1.066 1.41 0 2.468.922 2.468 2.902zM6.213 5.271C5.48 5.271 5 5.753 5 6.385c0 .62.466 1.115 1.185 1.115h.014c.748 0 1.213-.496 1.213-1.115-.014-.632-.465-1.114-1.199-1.114zm-1.086 9.556h2.144V8.38H5.127v6.447z"></path><path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"></path></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -164,11 +227,10 @@
         <div class='vh5 grid grid-rows-1'>
           <div class='grid grid-cols-2 gap-2'>
             <div class='font-firstBold text-myBlack text-5xl text-right'>
-              CHAT<br>WITH<br>ME
+              ©2021<br>JESSE<br>HELM+<br>GUBCo
             </div>
-            <div class='font-firstRegular text-myBlack text-xl text-left'>
-              SOLVE<br>PROBLEMS WITH COMPASSION <span>+</span>INTEGRITY.<br>
-              LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. QUID DUBITAS IGITUR MUTARE <br>
+            <div class='font-firstRegular text-myBlack text-xl text-left pt-48'>
+              IMAGES<br>BY<br><a href="https://whitneyretter.com/" target="blank" class='font-firstBoldItalic'>WHITNEY<BR>RETTER</a><BR><BR>THANK<br>YOU<BR>FOR<BR>VISITING
             </div>
           </div>
         </div>
@@ -177,9 +239,9 @@
         <!-- white -->
       </div>
     </div>
-    <footer class='font-first text-myBlack text-sm text-center'>
+    <!-- <footer class='font-first text-myBlack text-sm text-center'>
       © 2021 JESSE HELM - IMAGES BY <a href="https://whitneyretter.com/" target="blank">WHITNEY RETTER</a>
-    </footer>
+    </footer> -->
     <!-- JS -->
     <script src="script.js"></script>
     <script src="p5.js"></script>
