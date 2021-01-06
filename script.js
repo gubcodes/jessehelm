@@ -1,4 +1,4 @@
-//smooth scroll:
+//SCROLL smoothly---------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -7,8 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+//TITLE animation---------------
+let titleArray = [' ','J','E','S','S','E',' ','H','E','L','M']
+setInterval(() => {
+  let end = titleArray.shift();
+  titleArray.push(end);
+  document.getElementById('title').innerHTML = titleArray.join('');
+}, 450);
 //I MADE THESE section----------
-async function chbg1(image1, image2, image3, text, tech, listNumber) {
+async function chbg1(image1, image2, image3, text, tech, listNumber, link) {
   let div1 = document.getElementById('projectBG1');
   let div2 = document.getElementById('projectBG2');
   let div3 = document.getElementById('projectBG3');
@@ -40,7 +47,7 @@ async function chbg1(image1, image2, image3, text, tech, listNumber) {
   div4.style.opacity = '0';
   div5.style.opacity = '0';
 }
-function chbg2(image1, image2, image3, text, tech, listNumber) {
+function chbg2(image1, image2, image3, text, tech, listNumber, link) {
   let div1 = document.getElementById('projectBG1');
   let div2 = document.getElementById('projectBG2');
   let div3 = document.getElementById('projectBG3');
@@ -56,7 +63,13 @@ function chbg2(image1, image2, image3, text, tech, listNumber) {
   div4.innerText = text;
   div5.innerText = tech;
   div6Number.classList.add('projectSelect');
-  // TODO: add link parameters
+  {
+    link === ''
+    ?
+    div7.innerHTML = ''
+    :
+    div7.innerHTML = `<a href='${link}' target='_blank'> CHECK IT OUT <svg class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="32" height="32" fill='#545454' preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"></path><path d="M11.828 9.586l-3.95 3.95a1 1 0 1 1-1.414-1.415l3.95-3.95H6.828a1 1 0 0 1 0-2h6a.997.997 0 0 1 1 1v6a1 1 0 1 1-2 0V9.587z"></path></svg></a>`
+  }
 
   div1.style.opacity = '1';
   div2.style.opacity = '1';
@@ -66,8 +79,8 @@ function chbg2(image1, image2, image3, text, tech, listNumber) {
   div7.style.opacity = '1';
 }
 
-function chbg(image1, image2, image3, text, tech, listNumber) {
-  chbg1(image1, image2, image3, text, tech, listNumber).then(chbg2(image1, image2, image3, text, tech, listNumber));
+function chbg(image1, image2, image3, text, tech, listNumber, link) {
+  chbg1(image1, image2, image3, text, tech, listNumber).then(chbg2(image1, image2, image3, text, tech, listNumber, link));
 }
 
 //I LIKE TO section---------

@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">  
+  <link rel="manifest" href="./assets/icons/site.webmanifest">
   <link rel="stylesheet" href="./assets/fonts/fonts.css">
   <link rel="stylesheet" href="parallax.css">
   <link rel="stylesheet" href="spacing.css">
@@ -11,7 +16,7 @@
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="index.css">
   <!-- <link rel="stylesheet" href="missing.css"> -->
-  <title>- JESSE HELM -</title>
+  <title id='title'> JESSE HELM</title>
 </head>
 
 <body>
@@ -103,24 +108,25 @@
         <!-- portfolio -->
         <div class='vh5 grid grid-rows-1'>
           <div class='grid grid-cols-2 gap-2'>
-            <div class='grid grid-rows-4 gap-14'>
+            <div class='grid grid-rows-1 gap-2'>
             <div class='font-firstBold text-myBlack text-5xl text-right'>
               I<br>MADE<br>THESE
             </div>
-            <!-- <div id='projectTitle'></div> -->
-            <div class='font-firstRegular text-myBlack text-sm text-right lg:pl-48 lg:text-xl' id='projectText'></div>
-            <div class='font-firstRegular text-myBlack text-xs text-right lg:pl-48 lg:text-lg' id='projectTech'></div>
-            <div class='font-firstRegular text-myBlack text-xs text-right lg:pl-48 lg:text-xl' id='projectLink'>CHECK IT OUT <svg class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 24 24" width="32" height="32" fill='#545454' preserveAspectRatio="xMinYMin" class="icon__icon"><path d="M4 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm0-2h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"></path><path d="M11.828 9.586l-3.95 3.95a1 1 0 1 1-1.414-1.415l3.95-3.95H6.828a1 1 0 0 1 0-2h6a.997.997 0 0 1 1 1v6a1 1 0 1 1-2 0V9.587z"></path></svg></div>
+            <div class='grid grid-rows-3 gap-2 lg:pl-52'>
+            <div class='font-firstRegular text-myBlack text-sm text-right pt-12 lg:pl-48 lg:text-xl' id='projectText'></div>
+            <div class='font-firstItalic text-myBlack text-xs text-right lg:pl-48 lg:text-lg' id='projectTech'></div>
+            <div class='font-firstRegular text-myBlack text-xs text-right lg:pl-48 lg:text-xl' id='projectLink'></div>
+            </div>
           </div>
             <div class='font-firstRegular text-myBlack text-xl text-left'>
               <ul class='lg:pr-96 lg:mr-24' id='projectList'>
-                <li onClick="chbg('assets/porchswingScreen.png', 'assets/porchswingScreen2.png', 'assets/porchswingScreen3.png', `my idea of a local marketplace app, fully functional up until payment processing`, `REACT JSX, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, FIREBASE`, '0' )">PORCHSWING</li>
-                <li>WORTHEKIK</li>
-                <li>REACT RPG</li>
-                <li>GUBCo</li>
-                <li onClick="chbg('assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', `my second API project for EFA, utilizing NASA InSight + Meteostat. (inoperative)`, `JAVASCRIPT, BOOTSTRAP, CSS, HTML, FIREBASE`, '4', chbg2)">LAST WEEK ON MARS</li>
-                <li>GIBBOLUNE</li>
-                <li class='pr-2 pb-2'><img id='projectBG1' src=''></li>
+                <li class='pointer' onClick="chbg('assets/porchswingScreen.png', 'assets/porchswingScreen2.png', 'assets/porchswingScreen3.png', `MY IDEA OF A LOCAL MAKER MARKETPLACE APP, FULLY FUNCTIONAL UP UNTIL PAYMENT PROCESSING`, `REACT JSX, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, FIREBASE`, '0', 'http://porchswing.herokuapp.com/' )">PORCHSWING</li>
+                <li class='pointer' onClick="chbg('assets/worthekikScreen.png', 'assets/worthekikScreen2.png', 'assets/worthekikScreen3.png', `BRANDING ONLY FOR NOW, WEBSITE SOON`, `ILLUSTRATOR, SVG, CSS`, '1', '' )">WORTHEKIK</li>
+                <li class='pointer' onClick="chbg('assets/nothingScreen.png', 'assets/nothingScreen2.png', 'assets/nothingScreen3.png', `PROCEDURALLY GENERATED GAME ENGINE, WORK-IN-PROGRESS, DEPLOYING FOR TESTING SOON`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU`, '2', '' )">REACT RPG</li>
+                <li class='pointer' onClick="chbg('assets/gubcoScreen.png', 'assets/gubcoScreen.png', 'assets/gubcoScreen.png', `AN IDEA SLOWLY COMING TO LIFE`, `IMAGINATION, PROCRASTINATION`, '3', 'https://www.instagram.com/gubcompanies/' )">GUBCo</li>
+                <li class='pointer' onClick="chbg('assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', 'assets/APIChallenge2Screen.png', `MY SECOND API PROJECT FOR EFA, UTILIZING NASA INSIGHT + METEOSTAT (CURRENTLY INOPERATIVE)`, `JAVASCRIPT, BOOTSTRAP, CSS, HTML, FIREBASE`, '4', 'https://apichallenge2jh.web.app/')">LAST WEEK ON MARS</li>
+                <li class='pointer' onClick="chbg('assets/recipeazyScreen.png', 'assets/recipeazyScreen2.png', 'assets/recipeazyScreen3.png', `EFA WEEK-LONG GROUP PROJECT, GREAT LEARNING EXPERIENCE`, `REACT.JS, NODE.JS, POSTGRES, SEQUELIZE, REACTSTRAP, HEROKU, TEAM GIT`, '5', 'https://group-4-recipeazy-client.herokuapp.com/')">RECIPEAZY</li>
+                <li class='pr-2 pb-2 pt-1'><img id='projectBG1' src=''></li>
                 <li class='pr-2 pb-2'><img id='projectBG2' src=''></li>
                 <li class='pr-2 pb-2'><img id='projectBG3' src=''></li>
               </ul>

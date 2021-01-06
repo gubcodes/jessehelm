@@ -70,3 +70,6 @@
   75% {background-color: #aba7e1}
   95% {background-color: #aba7e1}
 }
+.pointer {
+  cursor: pointer;
+}
