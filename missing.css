@@ -2,16 +2,14 @@
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
-  /* background-image: url(./assets/Jesse-Whitney-Retter-Photography-31.jpg); */
   background-image: url(./assets/jesseLandingMissing.png);
-  background-color: #f99974;
   animation: jesseLandingMissing 4s linear infinite;
   /* filter:contrast(120%) brightness(200%); */
   background-size: cover;
   background-position: center;
   /* top: -24%; */
 }
-@keyframes jesseLandingMissing {
+/* @keyframes jesseLandingMissing {
   0% {background-color: #f99974}
   20% {background-color: #f99974}
   25% {background-color: #bde8ea}
@@ -20,4 +18,13 @@
   70% {background-color: #fbe457}
   75% {background-color: #aba7e1}
   95% {background-color: #aba7e1}
+} */
+#group2 #missingTextLanding {
+  -webkit-transform: translateZ(-302px) scale(2);
+  transform: translateZ(-302px) scale(2);
+  z-index: 10;
+}
+.missingText {
+  background-color: black;
+  color: white;
 }

@@ -95,6 +95,7 @@ let loaded = false;
 // async function:
 async function load () {
   // loop over the length of the array of letters, creating span elements inside the 'testSpan' class, also using the ternary to break the lines where we want:
+  console.log(letters);
   for(i = 0; i < letters.length; i++) {
       let span = document.createElement("SPAN");
       if (i == 8) {
@@ -134,3 +135,23 @@ let observer = new IntersectionObserver(function(entries) {
   });
 }, config);
 observer.observe(visibleDiv);
+
+// INFO section svg animation
+const textPath = document.querySelector("#text-path");
+const parallax = document.querySelector('.parallax');
+const group3 = document.querySelector('#group3')
+
+const hz = parallax, 
+      bz = group3,
+      stz = 'scrollTop',
+      shz = 'scrollHeight';
+
+      console.log('hz: ', hz);
+      console.log('bz: ', bz);
+
+parallax.addEventListener("scroll", e => {
+  let percent = (hz[stz]||bz[stz]) / ((hz[shz]||bz[shz]) - hz.clientHeight) * 100;
+  textPath.setAttribute("startOffset", (-percent * 40) + 800)
+  
+  console.log(percent);
+});
