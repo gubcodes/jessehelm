@@ -1,11 +1,3 @@
-// mobile scroll issue:
-scrollOnLoad();
-
-function scrollOnLoad() {
-  document.querySelector('.parallax').scrollBy(0, 10);
-}
-
-
 //SCROLL smoothly---------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
