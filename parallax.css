@@ -108,7 +108,6 @@ body {
   -webkit-transform: translateZ(-300px) scale(2);
   transform: translateZ(-300px) scale(2);
   z-index: 3;
-  /* TODO: */
   background-image: url(./assets/Jesse-Whitney-Retter-Photography-31.jpg);
   /* filter:contrast(120%) brightness(200%); */
   background-size: cover;
@@ -119,6 +118,11 @@ body {
   -webkit-transform: translateZ(90px) scale(.7);
   transform: translateZ(90px) scale(.7);
   z-index: 1;
+}
+#group3 #svg {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 0;
 }
 #group3 #base {
   -webkit-transform: translateZ(0);
