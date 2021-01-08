@@ -186,13 +186,17 @@ body {
   background-color: white;
 }
 /* navigation */
+/* .navTest {
+  bottom: 100px;
+} */
 .parallaxLayerNav {
   /* display: flex; test */
   /* position: -webkit-sticky;
   position: sticky; */
   position: fixed;
   height: 0;
-  top: 76%;
+  /* top: 76vh; */
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -203,8 +207,10 @@ body {
   z-index: 100;
   position: -webkit-sticky;
   position: sticky;
-  /* height: 20%; */
-  /* top: 250%; */
+  /* top: 76vh; */
+}
+.navTest {
+  bottom: 200px;
 }
 #nav1 {
   color: #f99974;
@@ -328,7 +334,7 @@ body {
   95% {fill: #f99974}
 }
 #findIcon4 {
-  fill: #bde8ea;
+  fill: #f99974;
   animation: fill4 10s linear infinite;
   -webkit-filter: drop-shadow( 2px 2px #545454);
   filter: drop-shadow( 2px 2px #545454);
