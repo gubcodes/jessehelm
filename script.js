@@ -2,7 +2,7 @@
 scrollOnLoad();
 
 function scrollOnLoad() {
-   window.scrollBy(0, 1);
+  document.querySelector('.parallax').scrollBy(0, 1);
 }
 
 
