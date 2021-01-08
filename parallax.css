@@ -193,7 +193,7 @@ body {
   /* display: flex; test */
   /* position: -webkit-sticky;
   position: sticky; */
-  position: fixed;
+  /* position: fixed; */
   height: 0;
   /* top: 76vh; */
   /* top: 0; */
@@ -210,7 +210,7 @@ body {
   /* top: 76vh; */
 }
 .navTest {
-  bottom: 180px;
+  bottom: 150px;
 }
 #nav1 {
   color: #f99974;
