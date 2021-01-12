@@ -13,19 +13,15 @@ let sketch = function (p) {
       p.fill(255,255,255)
       p.text('//HINT: TAP', w / 1.75, h / 4);
     }
-    // p.fill(84, 84, 84)
     p.fill(255,255,255)
-    // p.text('//HINT: TAP', w / 1.75, h / 4);
   }
-
   //tracking number of clicks:
   let times = -1;
   //array of technologies:
-  let list = ['JAVASCRIPT', 'TYPESCRIPT', 'P5.JS', 'REACT.JS', 'CSS', 'TAILWIND', 'BOOTSTRAP', 'SQL', 'POSTGRES', 'HTML', 'PHOTOSHOP', 'ILLUSTRATOR', 'FIGMA', 'GITHUB', 'HEROKU', 'FIREBASE']
-
+  let list = ['JAVASCRIPT', 'TYPESCRIPT', 'P5.JS', 'REACT.JS', 'CSS', 'TAILWIND', 'BOOTSTRAP', 'SQL', 'POSTGRES', 'HTML', 'PHOTOSHOP', 'ILLUSTRATOR', 'FIGMA', 'GITHUB', 'HEROKU', 'FIREBASE', 'FLOPPY DISKS', 'VHS', 'Hi8']
   p.mouseClicked = function () {
-    if (times === 15) {
-      times = -1;
+    if (times === list.length - 1) {
+      times = 0;
     } else {
       times = times += 1;
     }
@@ -35,7 +31,7 @@ let sketch = function (p) {
     // return false;
   }
   // window.onresize = function() {
-  //   //assigns new values for width and height variables
+  //   //assigns new values for width and height variables - doesn't seem to work
   //   w = window.innerWidth;
   //   h = window.innerHeight;  
   //   canvas.p.size(w,h);

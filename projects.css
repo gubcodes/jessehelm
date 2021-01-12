@@ -73,3 +73,23 @@
 .pointer {
   cursor: pointer;
 }
+.orange {
+  fill: #f99974;
+}
+.yellow {
+  fill: #fbe457;
+}
+.blue {
+  fill: #bde8ea;
+}
+.purple {
+  fill: #aba7e1;
+}
+.badgeCircle {
+  transform-origin: 250px 250px;
+  animation: rotateBadge 10s linear infinite;
+}
+@keyframes rotateBadge {
+  0% { transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

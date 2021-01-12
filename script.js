@@ -8,12 +8,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 //TITLE animation---------------
-let titleArray = [' ','J','E','S','S','E',' ','H','E','L','M']
-setInterval(() => {
-  let end = titleArray.shift();
-  titleArray.push(end);
-  document.getElementById('title').innerHTML = titleArray.join('');
-}, 450);
+// let titleArray = [' ','J','E','S','S','E',' ','H','E','L','M']
+// setInterval(() => {
+//   let end = titleArray.shift();
+//   titleArray.push(end);
+//   document.getElementById('title').innerHTML = titleArray.join('');
+// }, 300);
 //I MADE THESE section----------
 async function chbg1(image1, image2, image3, text, tech, listNumber, link) {
   let div1 = document.getElementById('projectBG1');
@@ -83,58 +83,58 @@ function chbg(image1, image2, image3, text, tech, listNumber, link) {
   chbg1(image1, image2, image3, text, tech, listNumber).then(chbg2(image1, image2, image3, text, tech, listNumber, link));
 }
 
-//I LIKE TO section---------
-// pick your text:
-let sentence = '...SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';
-// split it up into an array of letters:
-let letters = sentence.split('');
-// set up the timer:
-const timer = ms => new Promise(res => setTimeout(res, ms));
-// setting whether or not it has been loaded already:
-let loaded = false;
-// async function:
-async function load () {
-  // loop over the length of the array of letters, creating span elements inside the 'testSpan' class, also using the ternary to break the lines where we want:
-  console.log(letters);
-  for(i = 0; i < letters.length; i++) {
-      let span = document.createElement("SPAN");
-      if (i == 8) {
-        span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 17) {
-        span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 22) {
-        span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 34) {
-        span.innerHTML = `<br>${letters[i]}`;
-      } else if (i == 45) {
-        span.innerHTML = `<br>${letters[i]}`;
-      } else {
-        span.innerHTML = letters[i];
-      }
-    // span.innerHTML = (i == 20 ? `<br>${letters[i]}` : letters[i]);
-    document.getElementById('animateDiv').appendChild(span).className = 'animateSpan';
-    // set timer length for loop cycle:
-  await timer(30);
-};
-console.log(loaded);
-}
-// call the whole function when scrolled to:
-const config = {
-  root: null,
-}
-const visibleDiv = document.querySelector('#animateDiv');
-let isLeaving = false;
-let observer = new IntersectionObserver(function(entries) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && loaded === false) {
-      loaded = true;
-      load();
-    } else {
-      console.log('not rendered on entry')
-    }
-  });
-}, config);
-observer.observe(visibleDiv);
+// //I LIKE TO section---------
+// // pick your text:
+// let sentence = '...SOLVE PROBLEMS WITH COMPASSION+ INTEGRITY.';
+// // split it up into an array of letters:
+// let letters = sentence.split('');
+// // set up the timer:
+// const timer = ms => new Promise(res => setTimeout(res, ms));
+// // setting whether or not it has been loaded already:
+// let loaded = false;
+// // async function:
+// async function load () {
+//   // loop over the length of the array of letters, creating span elements inside the 'testSpan' class, also using the ternary to break the lines where we want:
+//   console.log(letters);
+//   for(i = 0; i < letters.length; i++) {
+//       let span = document.createElement("SPAN");
+//       if (i == 8) {
+//         span.innerHTML = `<br>${letters[i]}`;
+//       } else if (i == 17) {
+//         span.innerHTML = `<br>${letters[i]}`;
+//       } else if (i == 22) {
+//         span.innerHTML = `<br>${letters[i]}`;
+//       } else if (i == 34) {
+//         span.innerHTML = `<br>${letters[i]}`;
+//       } else if (i == 45) {
+//         span.innerHTML = `<br>${letters[i]}`;
+//       } else {
+//         span.innerHTML = letters[i];
+//       }
+//     // span.innerHTML = (i == 20 ? `<br>${letters[i]}` : letters[i]);
+//     document.getElementById('animateDiv').appendChild(span).className = 'animateSpan';
+//     // set timer length for loop cycle:
+//   await timer(30);
+// };
+// console.log(loaded);
+// }
+// // call the whole function when scrolled to:
+// const config = {
+//   root: null,
+// }
+// const visibleDiv = document.querySelector('#animateDiv');
+// let isLeaving = false;
+// let observer = new IntersectionObserver(function(entries) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting && loaded === false) {
+//       loaded = true;
+//       load();
+//     } else {
+//       console.log('not rendered on entry')
+//     }
+//   });
+// }, config);
+// observer.observe(visibleDiv);
 
 // INFO section svg animation
 const textPath = document.querySelector("#text-path");
