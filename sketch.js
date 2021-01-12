@@ -18,8 +18,8 @@ let sketch = function (p) {
   //tracking number of clicks:
   let times = -1;
   //array of technologies:
-  let list = ['JAVASCRIPT', 'TYPESCRIPT', 'P5.JS', 'REACT.JS', 'CSS', 'TAILWIND', 'BOOTSTRAP', 'SQL', 'POSTGRES', 'HTML', 'PHOTOSHOP', 'ILLUSTRATOR', 'FIGMA', 'GITHUB', 'HEROKU', 'FIREBASE', 'FLOPPY DISKS', 'VHS', 'Hi8']
-  p.mouseClicked = function () {
+  let list = ['JAVASCRIPT', '', 'TYPESCRIPT', '', 'P5.JS', '', 'REACT.JS', '', 'CSS', '', 'TAILWIND', '', 'BOOTSTRAP', '', 'SQL', '', 'POSTGRES', '', 'HTML', '', 'PHOTOSHOP', '', 'ILLUSTRATOR', '', 'FIGMA', '', 'GITHUB', '', 'HEROKU', '', 'FIREBASE', '', 'FLOPPY DISKS', '', 'VHS', '', 'Hi8', '',]
+  p.touchStarted = function () {
     if (times === list.length - 1) {
       times = 0;
     } else {
@@ -28,7 +28,7 @@ let sketch = function (p) {
     console.log(p.mouseX, p.mouseY);
     p.text(list[times], p.mouseX, p.mouseY);
     // prevent default
-    // return false;
+    // return false; //makes navigation not work
   }
   // window.onresize = function() {
   //   //assigns new values for width and height variables - doesn't seem to work
