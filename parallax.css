@@ -219,7 +219,7 @@ body {
 }
 @media (min-width: 1024px) {
   .navTest {
-    bottom: 25vh;
+    bottom: 175px;
   }
 }
 #nav1 {
