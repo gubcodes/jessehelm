@@ -18,7 +18,7 @@ let sketch = function (p) {
   //tracking number of clicks:
   let times = -1;
   //array of technologies:
-  let list = ['JAVASCRIPT', '', 'TYPESCRIPT', '', 'P5.JS', '', 'REACT.JS', '', 'CSS', '', 'TAILWIND', '', 'BOOTSTRAP', '', 'SQL', '', 'POSTGRES', '', 'HTML', '', 'PHOTOSHOP', '', 'ILLUSTRATOR', '', 'FIGMA', '', 'GITHUB', '', 'HEROKU', '', 'FIREBASE', '', 'FLOPPY DISKS', '', 'VHS', '', 'Hi8', '',]
+  let list = ['JAVASCRIPT', '', 'TYPESCRIPT', '', 'P5.JS', '', 'REACT.JS', '', 'CSS', '', 'TAILWIND', '', 'BOOTSTRAP', '', 'SQL', '', 'NODE.JS', '', 'POSTGRES', '', 'HTML', '', 'PHOTOSHOP', '', 'ILLUSTRATOR', '', 'FIGMA', '', 'SVG', '', 'GITHUB', '', 'HEROKU', '', 'FIREBASE', '', 'MSPAINT', '', 'HTML', '', 'FLOPPY DISKS', '', 'VHS', '', 'Hi8', '']
   p.touchStarted = function () {
     if (times === list.length - 1) {
       times = 0;

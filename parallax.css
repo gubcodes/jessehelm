@@ -210,7 +210,17 @@ body {
   /* top: 76vh; */
 }
 .navTest {
-  bottom: 25vh;
+  bottom: 150px;
+}
+@media (min-width: 768px) {
+  .navTest {
+    bottom: 25vh;
+  }
+}
+@media (min-width: 1024px) {
+  .navTest {
+    bottom: 175px;
+  }
 }
 #nav1 {
   color: #f99974;
