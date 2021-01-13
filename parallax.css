@@ -210,7 +210,7 @@ body {
   /* top: 76vh; */
 }
 .navTest {
-  bottom: 150px;
+  bottom: 200px;
 }
 @media (min-width: 768px) {
   .navTest {
@@ -219,7 +219,7 @@ body {
 }
 @media (min-width: 1024px) {
   .navTest {
-    bottom: 175px;
+    bottom: 25vh;
   }
 }
 #nav1 {
