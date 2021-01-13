@@ -8,12 +8,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 //TITLE animation---------------
-// let titleArray = [' ','J','E','S','S','E',' ','H','E','L','M']
-// setInterval(() => {
-//   let end = titleArray.shift();
-//   titleArray.push(end);
-//   document.getElementById('title').innerHTML = titleArray.join('');
-// }, 300);
+let titleArray = [' ','J','E','S','S','E',' ','H','E','L','M']
+setInterval(() => {
+  let end = titleArray.shift();
+  titleArray.push(end);
+  document.getElementById('title').innerHTML = titleArray.join('');
+}, 300);
 //I MADE THESE section----------
 async function chbg1(image1, image2, image3, text, tech, listNumber, link) {
   let div1 = document.getElementById('projectBG1');
