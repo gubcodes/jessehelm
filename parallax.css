@@ -213,7 +213,6 @@ body {
   position: sticky;
   /* top: 76vh; */
 }
-/* TODO: make this work on ios */
 .navTest {
   bottom: 180px;
 }
