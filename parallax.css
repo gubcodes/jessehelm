@@ -215,7 +215,7 @@ body {
 }
 /* TODO: make this work on ios */
 .navTest {
-  top: 74vh;
+  bottom: 150px;
 }
 /* @media (min-width: 768px) {
   .navTest {
